@@ -37,6 +37,7 @@ public class MemberService {
      *회원 전체 조회
      */
     public List<Member> findMembers(){
+        //dto를 생성해 넘겨주는 것이 좋다.
         return memberRepository.findAll();
     }
 
